@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">My Application</string>
-    <string name="hello">你好</string>
+    <string name="textView">生日快乐</string>
+    <string name="editText">等待输入</string>
+    <string name="TeamA">队伍A</string>
+    <string name="button3">+3分</string>
+    <string name="TeamB">队伍B</string>
+    <string name="button2">+2分</string>
+    <string name="button1">+1分</string>
+    <string name="reset">重置</string>
+    <string name="reset_toast">已重置！</string>
+    <string name="title_path">征途</string>
+    <string name="title_community">社区</string>
+    <string name="title_market">集市</string>
+
+    <string name="rateInput">请输入金额</string>
+    <string name="rate_dollar">美元</string>
+    <string name="rate_euro">欧元</string>
+    <string name="rate_won">韩元</string>
+    <string name="rate_open">打开</string>
+    <string name="rate_sure">确定</string>
+    <string name="follow">关注</string>
+    <string name="top">热门</string>
+    <string name="vicinty">附近</string>
 </resources>
