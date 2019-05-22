@@ -29,6 +29,7 @@ import java.io.Reader;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 public class RateActivity extends AppCompatActivity implements Runnable{
 
@@ -155,8 +156,21 @@ public class RateActivity extends AppCompatActivity implements Runnable{
             resetRate();
         }else if (item.getItemId()==R.id.menu_open_list){
             //打开列表窗口
-            Intent list=new Intent(this,MyList2Activity.class);
+            Intent list=new Intent(this,RateListActivity.class);
             startActivity(list);
+            //测试数据库
+//            RateItem item1=new RateItem("aaaa","123");
+//            RateManager manager=new RateManager(this);
+//            manager.add(item1);
+//            manager.add(new RateItem("bbbb","23.5"));
+//            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+//
+//            //查询所有数据
+//            List<RateItem> testList= manager.listAll();
+//
+//            for (RateItem i:testList){
+//                Log.i(TAG, "onOptionsItemSelected: 取出数据 [id="+i.getId()+"],Name="+i.getCurName()+",Rate="+i.getCurRate());
+//            }
         }
         return super.onOptionsItemSelected(item);
     }
@@ -173,7 +187,6 @@ public class RateActivity extends AppCompatActivity implements Runnable{
     @Override
     public void run() {
 
-
         Bundle bdl=new Bundle();
 
         //获取网络数据
@@ -185,7 +198,6 @@ public class RateActivity extends AppCompatActivity implements Runnable{
 
             String html=inputStream2String(in);
             Log.i(TAG, "html : "+html);
-
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -214,7 +226,7 @@ public class RateActivity extends AppCompatActivity implements Runnable{
 //            }
 
             Element table2 = tables.get(1);
-            Log.i(TAG,"run: table2=" + table2);
+            //Log.i(TAG,"run: table2=" + table2);
 
             Elements tds=table2.getElementsByTag("td");
 //            for (Element td:tds){

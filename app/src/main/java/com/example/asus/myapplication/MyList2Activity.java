@@ -31,7 +31,6 @@ public class MyList2Activity extends ListActivity  implements Runnable,AdapterVi
     private SimpleAdapter listItemAdapter;//配适器
     private static final String TAG = "MyList2Activity";
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
