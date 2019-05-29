@@ -29,6 +29,11 @@
     <string name="follow">FOLLOW</string>
     <string name="top">TOP</string>
     <string name="vicinty">VICINTY</string>
+    <string name="rdo_home_lable">HOME</string>
+    <string name="rdo_func_lable">FUNC</string>
+    <string name="rdo_setting_lable">SETTING</string>
+
+    <string name="footing">footing</string>
 
 
 </resources>
