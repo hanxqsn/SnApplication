@@ -23,4 +23,10 @@
     <string name="follow">关注</string>
     <string name="top">热门</string>
     <string name="vicinty">附近</string>
+    <string name="rdo_home_lable">主页</string>
+    <string name="rdo_func_lable">功能</string>
+    <string name="rdo_setting_lable">设置</string>
+    <string name="footing">慢跑</string>
+    <string name="sprint">短跑</string>
+    <string name="marathon">马拉松</string>
 </resources>

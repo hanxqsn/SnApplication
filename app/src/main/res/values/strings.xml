@@ -34,6 +34,8 @@
     <string name="rdo_setting_lable">SETTING</string>
 
     <string name="footing">footing</string>
+    <string name="sprint">sprint</string>
+    <string name="marathon">marathon</string>
 
 
 </resources>
