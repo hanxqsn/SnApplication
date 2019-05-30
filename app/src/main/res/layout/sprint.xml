@@ -6,42 +6,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/sprintTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/sprint"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/sprintPic"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/sprint" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/sprintDetail"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="短跑是田径径赛项目的其中一类，一般包括：50米跑、60米跑、100米跑、200米跑，400米跑，4×100米接力跑等几项；其运动特性：是人们同时以最快的速度，在田径跑道上跑完规定的距离，并以最先跑完者为获胜者的项目。
-在人体机能供能方面，短跑表现为人体以最大限度地发挥人的速度极限本能，并以无氧代谢供能的方式供能。"/>
-    </LinearLayout>
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/sprintTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/sprint"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/sprint"/>
+
+            <TextView
+                android:id="@+id/sprintDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="短跑是田径径赛项目的其中一类，一般包括：50米跑、60米跑、100米跑、200米跑，400米跑，4×100米接力跑等几项；其运动特性：是人们同时以最快的速度，在田径跑道上跑完规定的距离，并以最先跑完者为获胜者的项目。
+在人体机能供能方面，短跑表现为人体以最大限度地发挥人的速度极限本能，并以无氧代谢供能的方式供能。"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </LinearLayout>

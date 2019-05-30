@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeworkFrameActivity"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/footing_fragment"
+        android:name="com.example.asus.myapplication.FootingFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"></fragment>
+
+    <fragment
+        android:id="@+id/sprint_fragment"
+        android:name="com.example.asus.myapplication.SprintFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"></fragment>
+
+    <fragment
+        android:id="@+id/marathon_fragment"
+        android:name="com.example.asus.myapplication.MarathonFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"></fragment>
+
+    <RadioGroup
+        android:id="@+id/RunBottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/footingButton"
+            android:text="@string/footing"
+            style="@style/rg_btn_style"
+            />
+        <RadioButton
+            android:id="@+id/sprintButton"
+            android:text="@string/sprint"
+            style="@style/rg_btn_style"
+            />
+        <RadioButton
+            android:id="@+id/marathonButton"
+            android:text="@string/marathon"
+            style="@style/rg_btn_style"
+            />
+    </RadioGroup>
+
+</LinearLayout>

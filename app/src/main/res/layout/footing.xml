@@ -5,44 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="4"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/footingTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/footing"
-            android:textAlignment="center"
-            android:textSize="30sp"
-            android:textStyle="bold" />
-        <ImageView
-            android:id="@+id/footingPic"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/footing" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/footingDetail"
+        android:layout_height="match_parent">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:text="慢跑（英语：Jogging或称Footing），亦称为缓步、缓跑或缓步跑，是一种中等强度的有氧运动，目的在以较慢或中等的节奏来跑完一段相对较长的距离，以达到热身或锻炼的目的。
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/footingTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/footing"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/footing"/>
+
+            <TextView
+                android:id="@+id/footingDetail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="慢跑（英语：Jogging或称Footing），亦称为缓步、缓跑或缓步跑，是一种中等强度的有氧运动，目的在以较慢或中等的节奏来跑完一段相对较长的距离，以达到热身或锻炼的目的。
 从20世纪60年代起，在美国估计有700~1000万人坚持慢跑，目的在于增进健康、增强体质、减肥防胖并求体态优美和心情舒畅。慢跑每分钟消耗10~13大卡的热量（打网球每分钟消耗7~9大卡热量）。1967年俄勒冈大学的径赛教练鲍尔曼和专门研究心脏的医学家哈里斯合著的《慢跑》一书出版，大大促进慢跑活动的普及。医学权威认为，慢跑是锻炼心脏和全身的好方法。慢跑通常以隔日进行为宜。在硬地面慢跑每英里两脚撃地600~750次，因此有的医学家认为，慢跑会引起足弓下陷，外胫夹、汗疹、跟腱劳损、脚肿挫伤以及膝部后背病痛。所以慢跑前要做好准备动作，慢跑时要穿合适的鞋和松宽的衣服，跑法要正确，而且需要一般良好健康情况和明确目的。
 慢跑对于保持中老年人良好的心脏功能，防止肺组织弹性衰退，预防肌肉萎缩，防治冠心病、高血压、动脉硬化等，具有积极的作用。同时也必须关注慢跑鞋等一些细节。可加速脂肪消耗达到快速的减肥目的。也可以增强自身体质，提高抵抗力。"/>
-    </LinearLayout>
 
+        </LinearLayout>
+
+
+    </ScrollView>
 
 
 </LinearLayout>
